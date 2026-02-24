@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Title: I NEED to eat 10,000 Calories</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.card {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+ul {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.note {
+  display: none;
+  margin-top: 10px;
+  padding: 12px;
+  background: #eef5ff;
+  border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>I NEED to eat 10,000 calories (Matt Stonie)</h1>
+
+<p>
+This page presents a short-form extreme eating video as a digitized cultural object.
+In this 2024 upload, Matt Stonie completes a 10,000 calorie challenge as part of a yearly streak,
+showing how portion size and spectacle become a repeatable performance shaped by platform attention and audience expectations.
+</p>
+
+<h2>Image</h2>
+<img src="images/matt-stonie.png" alt="Screenshot from Matt Stonie 10000 calorie video">
+
+<h2>Link</h2>
+<ul>
+<li>
+<a href="https://www.youtube.com/watch?v=kMFaoGjW9BA" target="_blank">
+Original object (YouTube video)
+</a>
+</li>
+</ul>
+
+<h2>Metadata</h2>
+<ul>
+<li><strong>Creator:</strong> Matt Stonie</li>
+<li><strong>Platform:</strong> YouTube</li>
+<li><strong>Upload date:</strong> Dec 31, 2024</li>
+<li><strong>Runtime:</strong> 8:06</li>
+<li><strong>Views:</strong> 4.7M</li>
+<li><strong>Likes:</strong> 115K</li>
+<li><strong>Stated total:</strong> 10,140 calories</li>
+</ul>
+
+<button onclick="toggleNote()">Toggle Interpretation Note</button>
+
+<div class="note" id="note">
+In the transcript, the video frames the challenge as a requirement to preserve a streak since 2010,
+and repeatedly quantifies consumption through calorie counting.
+This combines spectacle with quantified self tracking and shows how food performance can be shaped by platform incentives for novelty and escalation.
+</div>
+
+</div>
+
+<script>
+function toggleNote() {
+  var note = document.getElementById("note");
+  if (note.style.display === "block") {
+    note.style.display = "none";
+  } else {
+    note.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
