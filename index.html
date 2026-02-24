@@ -85,6 +85,26 @@ body {
   font-size: 15px;
 }
 
+.image-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 20px;   /* THIS makes them rounded */
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.03);
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -114,6 +134,10 @@ ul {
   <div class="hero">
     <h1>Michelle Yi</h1>
     <h2>Information Sciences Student in Human-Computer Interaction & UX</h2>
+  </div>
+  <div class="image-row">
+    <img src="images/portfolio-photo.png" alt="Selfie">
+    <img src="images/portfolio-icecream.jpg" alt="Ice cream">
   </div>
 
   <div class="section">
